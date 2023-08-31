@@ -29,11 +29,33 @@ Line: 53
 
 Change: From ‘Products’ to ‘Robot Products’
 
-Note: Do not remove any elements that were included in the screen. You may add any additional elements you would like or any images, colors, and styles, although it is not required.
+
 
 
 D.  Add an “About” page to the application to describe your chosen customer’s company to web viewers and include navigation to and from the “About” page and the main screen.
+File name: aboutpage.html
 
+Line: 36
+
+Change: Added ‘About’ title to aboutpage.html
+
+File name: aboutpage.html
+
+Line: 39
+
+Change: Added ‘About Bender’s Robot Emporium’ header to aboutpage.html
+
+File name: aboutpage.html
+
+Line: 40 - 45
+
+Change: Added 3 about page paragraphs to aboutpage.html
+
+File name: aboutpage.html
+
+Line: 47 - 48
+
+Change: Added link to home page (mainscreen.html) from aboutpage.html
 
 E.  Add a sample inventory appropriate for your chosen store to the application. You should have five parts and five products in your sample inventory and should not overwrite existing data in the database.
 
