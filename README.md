@@ -2,12 +2,32 @@
 
 # WESTERN GOVERNOR UNIVERSITY 
 ## D287 – JAVA FRAMEWORKS
-Welcome to Java Frameworks! This is an opportunity for students to implement user interfaces and learn to leverage existing frameworks, assets, and content for object-oriented programming.
-FOR SPECIFIC TASK INSTRUCTIONS AND REQUIREMENTS FOR THIS ASSESSMENT, PLEASE REFER TO THE COURSE PAGE.
-## BASIC INSTRUCTIONS
+
 
 C.  Customize the HTML user interface for your customer’s application. The user interface should include the shop name, the product names, and the names of the parts.
+File name: mainscreen.html
 
+Line: 14
+
+Change: From ‘My Bike Shop’ to ‘Bender’s Robot Emporium’
+
+File name: mainscreen.html
+
+Line: 19
+
+Change: From ‘Shop’ to ‘Robot Shop’
+
+File name: mainscreen.html
+
+Line: 21
+
+Change: From ‘Parts’ to ‘Robot Parts’
+
+File name: mainscreen.html
+
+Line: 53
+
+Change: From ‘Products’ to ‘Robot Products’
 
 Note: Do not remove any elements that were included in the screen. You may add any additional elements you would like or any images, colors, and styles, although it is not required.
 
