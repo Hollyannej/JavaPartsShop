@@ -5,57 +5,31 @@
 
 
 C.  Customize the HTML user interface for your customer’s application. The user interface should include the shop name, the product names, and the names of the parts.
-File name: mainscreen.html
-
-Line: 14
-
-Change: From ‘My Bike Shop’ to ‘Bender’s Robot Emporium’
 
 File name: mainscreen.html
 
-Line: 19
+Line: 14 Changed ‘My Bike Shop’ to ‘Bender’s Robot Emporium’
 
-Change: From ‘Shop’ to ‘Robot Shop’
+Line: 19 Changed ‘Shop’ to ‘Robot Shop’
 
-File name: mainscreen.html
+Line: 21 Changed‘Parts’ to ‘Robot Parts’
 
-Line: 21
-
-Change: From ‘Parts’ to ‘Robot Parts’
-
-File name: mainscreen.html
-
-Line: 53
-
-Change: From ‘Products’ to ‘Robot Products’
-
-
-
+Line: 53 Changed‘Products’ to ‘Robot Products’
 
 D.  Add an “About” page to the application to describe your chosen customer’s company to web viewers and include navigation to and from the “About” page and the main screen.
 File name: aboutpage.html
 
-Line: 36
+Line: 36 Added ‘About’ title to aboutpage.html
 
-Change: Added ‘About’ title to aboutpage.html
+Line: 39 Added ‘About Bender’s Robot Emporium’ header to aboutpage.html
 
-File name: aboutpage.html
+Line: 40 - 45 Added 3 about page paragraphs to aboutpage.html
 
-Line: 39
+Line: 47 - 48 Added link to home page (mainscreen.html)
 
-Change: Added ‘About Bender’s Robot Emporium’ header to aboutpage.html
+File name: mainscreen.html
 
-File name: aboutpage.html
-
-Line: 40 - 45
-
-Change: Added 3 about page paragraphs to aboutpage.html
-
-File name: aboutpage.html
-
-Line: 47 - 48
-
-Change: Added link to home page (mainscreen.html) from aboutpage.html
+Line 89 Added link to aboutpage.html
 
 E.  Add a sample inventory appropriate for your chosen store to the application. You should have five parts and five products in your sample inventory and should not overwrite existing data in the database.
 
