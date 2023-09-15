@@ -1,8 +1,6 @@
-<strong>** DO NOT DISTRIBUTE OR PUBLICLY POST SOLUTIONS TO THESE LABS. MAKE ALL FORKS OF THIS REPOSITORY WITH SOLUTION CODE PRIVATE. PLEASE REFER TO THE STUDENT CODE OF CONDUCT AND ETHICAL EXPECTATIONS FOR COLLEGE OF INFORMATION TECHNOLOGY STUDENTS FOR SPECIFICS. ** </strong>
 
-# WESTERN GOVERNOR UNIVERSITY 
+# WESTERN GOVERNOR UNIVERSITY
 ## D287 – JAVA FRAMEWORKS
-
 
 C.  Customize the HTML user interface for your customer’s application. The user interface should include the shop name, the product names, and the names of the parts.
 
@@ -33,42 +31,138 @@ Line 89 Added link to aboutpage.html
 
 E.  Add a sample inventory appropriate for your chosen store to the application. You should have five parts and five products in your sample inventory and should not overwrite existing data in the database.
 
+File name: Bootstrapdata.java
 
-Note: Make sure the sample inventory is added only when both the part and product lists are empty. When adding the sample inventory appropriate for the store, the inventory is stored in a set so duplicate items cannot be added to your products. When duplicate items are added, make a “multi-pack” part.
+Line 11: Added import ArrayList.
 
+Line 39 - 63: Added newParts ArrayList and branch to only add one of each product and part to repositories.
+
+Lines: 83- 131 Added 5 new parts with prices, company name, part name and inventory available.
+
+Lines: 145 - 154 Added 5 new products with product name, price, and inventory available.
+
+File Name: OutsourcedPart Repository
+
+Line: 15 Added findByName method.
 
 F.  Add a “Buy Now” button to your product list. Your “Buy Now” button must meet each of the following parameters:
 
-•   The “Buy Now” button must be next to the buttons that update and delete products.
+File name: mainscreen.html
 
-•   The button should decrement the inventory of that product by one. It should not affect the inventory of any of the associated parts.
+Line 85 - 88: Added Buy Now button to product list.
 
-•   Display a message that indicates the success or failure of a purchase.
+File Name: FailureController
 
+Lines 6 - 12 Added Failure Controller to lead to Failure Page.
+
+File Name: SuccessController
+
+Lines 6 - 12 Added Success Controller to lead to Successful purchase page.
+
+File Name: failure.html
+
+Lines: 1 - 13 Added a failure page if the purchase encounters an error.
+
+File Name: success.html
+
+Lines: 1 - 13 Add a success page to declare the purchase a success.
+
+File Name ProductRepository
+
+Line 20: Added findByName method.
+
+File Name: BuyProductController
+
+Lines: 1 - 53 Added BuyProduct Controller to interface with the Buy Now button and reduce the inventory by 1 on a successful purchase.
 
 G. Modify the parts to track maximum and minimum inventory by doing the following:
 
-•   Add additional fields to the part entity for maximum and minimum inventory.
+File name: Part.java
 
-•   Modify the sample inventory to include the maximum and minimum fields.
+Line: 31 - 34 Added minInv integer and maxInv integer.
 
-•   Add to the InhousePartForm and OutsourcedPartForm forms additional text inputs for the inventory so the user can set the maximum and minimum values.
+Lines: 44, 48 - 49, 53, 58 - 59 Added minInv and maxInv to the constructors.
 
-•   Rename the file the persistent storage is saved to.
+Lines: 94 -106 Added Setters and Getters for minInv and maxInv.
 
-•   Modify the code to enforce that the inventory is between or at the minimum and maximum value.
+Lines: 136 Added Method to check min and max inventory.
 
+File Name: BootStrapData
+
+Lines: 56- 57 Added minInv and maxInv to part list.
+
+Lines: 89, 90, 99, 100, 109, 110, 119, 120, 129, 130: Added minInv and maxInv values to the sample inventory.
+
+File Name: InHousePartForm
+
+Lines: 24 - 28 Added text fields for Min and Max inventory.
+
+File Name: OutsourcePartForm
+
+Lines: 25 - 29 Added text fields for Min and Max inventory.
+
+File Name: Application.properties
+
+Line: 6 Changed the file name to mirror the file name change elsewhere.
+
+File Name: InHousePart.java
+
+Lines: 20 - 21 Added Override to check inventory levels are within minInv and maxInv values and throw an error is there aren’t.
+
+File Name: OutsourcedPart.java
+
+Lines: 28 - 21 Added Override to check inventory levels are within minInv and maxInv values and throw an error is there aren’t.
+
+File Name: AddInhousePartController
+
+Lines: 37 Added Override to check inventory levels are within minInv and maxInv values and throw an error is there aren’t.
+
+Lines: 39 - 52, 62 - 67 Added logic to enforce min/max inventory.
+
+File Name: AddOutsourcedPartController
+
+Lines: 35 Added Override to check inventory levels are within minInv and maxInv values and throw an error is there aren’t.
+
+Lines: 40 - 54, 66 - 69 Added logic to enforce min/max inventory.
 
 H. Add validation for between or at the maximum and minimum fields. The validation must include the following:
 
-•   Display error messages for low inventory when adding and updating parts if the inventory is less than the minimum number of parts.
+File Name: EnufPartsValidator
 
-•   Display error messages for low inventory when adding and updating products lowers the part inventory below the minimum.
+Lines: 36 - 40 Added Max inventory constraint.
 
-•   Display error messages when adding and updating parts if the inventory is greater than the maximum.
+File Name: AddOutsourcePartController
 
+Lines: 56 - 64 Updated code to include new Min/Max constraint messages.
+
+File Name: AddInhousePartController
+
+Lines 54 - 62 Updated code to include new Min/Max constraint messages.
 
 I.  Add at least two unit tests for the maximum and minimum fields to the PartTest class in the test package.
 
+File Name: PartTest.java
+
+Lines: 160 - 176 Added a minInv and a maxInv unit test.
 
 J.  Remove the class files for any unused validators in order to clean your code.
+
+File Name: MainScreenController
+
+Lines: 5 - 6 Removed unused Validators
+
+File Name: BootStrapData.java
+
+Lines: 4, 9 - 12 Removed unused Validators
+
+File Name: AddPartController
+
+Lines: 6, 12 Removed unused Validators
+
+File Name: AddInhousePartController
+
+Lines: 4, 7 - 8 Removed unused Validators
+
+File Name: AddOutsourcedPartController
+
+Lines: 3 Removed unused Validators
